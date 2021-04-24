@@ -94,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "Koala Works";
+				ORGANIZATIONNAME = "Charles Wong";
 				TargetAttributes = {
 					518EACBF263370DD00B0FE24 = {
 						CreatedOnToolsVersion = 11.2.1;
