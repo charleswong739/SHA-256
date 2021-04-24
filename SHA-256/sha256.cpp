@@ -29,7 +29,7 @@ static const WORD k[64] = {
 void sha256(const char *message, WORD hash[]) {
     
     size_t l = strlen(message); // Message size in bytes
-    size_t buffer_size = (l / 48 + 1) * 64;
+    size_t buffer_size = ((l + 8) / 64 + 1) * 64;
     
     // Create buffer
     BYTE data[buffer_size];
@@ -72,7 +72,7 @@ void sha256(const char *message, WORD hash[]) {
         for (int t = 16; t < 64; t++) {
             schedule[t] = SIGL1(schedule[t - 2]) + schedule[t - 7] + SIGL0(schedule[t - 15]) + schedule[t - 16];
         }
-                
+        
         // Initialize working vars
         WORD a = h0;
         WORD b = h1;

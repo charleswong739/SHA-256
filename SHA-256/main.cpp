@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include "sha256.h"
 
 int main(int argc, const char * argv[]) {
@@ -23,7 +24,11 @@ int main(int argc, const char * argv[]) {
         sha256(message.c_str(), hash);
         
         for (int i = 0; i < 8; i++) {
-            std::cout << std::hex << __builtin_bswap32(hash[i]);
+            std::cout << std::setfill('0') << std::setw(8) << std::hex << __builtin_bswap32(hash[i]);
+            
+            if (i != 7) {
+                std::cout << ' ';
+            }
         }
         std::cout << std::endl;
         
