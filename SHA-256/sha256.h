@@ -3,7 +3,7 @@
 //  SHA-256
 //
 //  Created by Charles Wong on 2021-04-23.
-//  Copyright © 2021 Koala Works. All rights reserved.
+//  Copyright © 2021 Charles Wong. All rights reserved.
 //
 
 #ifndef sha256_h
@@ -22,9 +22,10 @@
 #define SIGL1(x) (ROTR(x, 17) ^ ROTR(x, 19) ^ ((x) >> 10))
 
 //-------TYPES-------//
-
+typedef uint8_t BYTE;
+typedef uint32_t WORD;
 
 //-------FUNCTION DECS-------//
-
+void sha256(const char *message, WORD hash[]);
 
 #endif /* sha256_h */
