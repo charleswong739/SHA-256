@@ -1,5 +1,4 @@
-# User settings
-xcuserdata/
+/*.xcodeproj/
 
 /*.gcno
 
