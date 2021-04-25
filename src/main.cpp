@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
     while (run) {
         std::string message;
         
-        std::cout << "Message to hash: " << std::endl;
+        std::cout << "Message to hash [Enter 'q' to exit]: " << std::endl;
         getline(std::cin, message);
         
         WORD hash[8];

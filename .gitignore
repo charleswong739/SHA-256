@@ -2,3 +2,6 @@
 xcuserdata/
 
 /*.gcno
+
+/[Bb]uild/
+/[Bb]in/
