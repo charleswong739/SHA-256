@@ -44,7 +44,7 @@ void sha256(const char *message, WORD hash[]) {
         data[i] = 0x00;
     }
     
-    size_t bitlen = l * 8;
+    uint64_t bitlen = l * 8;
     for (; i < buffer_size; i++) {
         data[i] = bitlen >> ((64 - i - 1) * 8);
     }

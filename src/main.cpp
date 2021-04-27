@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
                 std::cout << ' ';
             }
         }
-        std::cout << std::endl;
+        std::cout << std::dec << std::endl;
         
         if (message == "q") {
             run = false;
