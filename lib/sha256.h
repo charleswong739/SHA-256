@@ -9,6 +9,8 @@
 #ifndef sha256_h
 #define sha256_h
 
+#include <cstdint>
+
 //-------MACROS-------//
 #define ROTR(x, n) (((x) >> (n)) | ((x) << (32 - (n))))
 #define ROTL(x, n) (((x) << (n)) | ((x) >> (32 - (n))))
